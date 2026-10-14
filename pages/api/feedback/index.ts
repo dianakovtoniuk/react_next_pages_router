@@ -17,6 +17,10 @@ export function buildFeedbackPath(): string {
 }
 
 export function extractFeedback(filePath: string): Feedback[] {
+  if (!fs.existsSync(filePath)) {
+    return [];
+  }
+
   const fileData = fs.readFileSync(filePath, 'utf-8');
   const data: Feedback[] = JSON.parse(fileData);
   return data;
