@@ -1,6 +1,6 @@
 # Next.js Feedback App
 
-A small Next.js app that shows how API routes work. Users can submit feedback through a form, load all feedback, and view details for a single item.
+A Next.js app that shows how API routes work. Users can submit feedback through a form, load all feedback, and view details for a single item.
 
 ## Features
 
